@@ -1,0 +1,193 @@
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang lebih ceria */
+    background-color: #fff7e6; /* Warna latar belakang lembut */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Gaya untuk header */
+.header h1 {
+    color: #eb2b4b; /* Warna pink cerah */
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px #ffa07a; /* Efek bayangan teks */
+}
+
+/* Gaya untuk container */
+.container {
+    background-color: #fff7e6; /* Warna latar belakang untuk container */
+    padding: 20px;
+}
+
+/* Gaya untuk div Haloo */
+#Haloo {
+    background-color: #ffcccb; /* Warna merah muda lembut */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 2px dashed #ff69b4; /* Garis tepi bergaya ulang tahun */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk div Nailaa */
+#Nailaa {
+    background-color: #ccffcc; /* Warna hijau lembut */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 2px dashed #32cd32; /* Garis tepi hijau */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk div Cantikkkk */
+#Cantikkkk {
+    background-color: #ccccff; /* Warna ungu lembut */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 2px dashed #9370db; /* Garis tepi ungu */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk navigasi */
+nav {
+    background-color: #ff69b4; /* Warna pink cerah */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white; /* Warna teks tautan di navigasi */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Efek hover pada tautan di navigasi */
+}
+
+/* Gaya untuk tautan di dalam div */
+#Haloo a, #Nailaa a, #Cantikkkk a {
+    color: #ff69b4; /* Warna teks tautan di dalam div */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Haloo a:hover, #Nailaa a:hover, #Cantikkkk a:hover {
+    color: #333; /* Warna teks saat hover */
+    text-decoration: underline;
+}
+
+/* Gaya untuk daftar */
+ul {
+    list-style-type: disc; /* Gaya list */
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Jarak antar item list */
+    color: #0f8494; /* Warna teks list */
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Tampilkan tautan navigasi secara vertikal di layar kecil */
+        margin: 10px 0;
+    }
+
+    #Haloo, #Nailaa, #Cantikkkk {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .header h1 {
+        font-size: 32px; /* Ukuran font lebih kecil di layar kecil */
+    }
+}
+
+/* Gaya untuk elemen h2 */
+h2 {
+    text-align: center; /* Mengatur teks agar rata tengah */
+    color: #9370db;
+}
+
+/* Gaya untuk halaman aboutyou.html */
+
+/* Gaya untuk header di aboutyou.html */
+header h1 {
+    color: #ff69b4; /* Warna pink cerah */
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #ffa07a; /* Efek bayangan teks */
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk section puisi */
+.poem {
+    background-color: #ffe4e1; /* Warna latar belakang lembut */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Gaya untuk teks puisi */
+.poem p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.poem p strong {
+    color: #ff69b4; /* Warna pink untuk teks penting */
+    font-size: 20px;
+}
+
+/* Gaya untuk elemen h2 di puisi */
+.poem h2 {
+    text-align: center;
+    color: #9370db; /* Warna ungu lembut */
+    font-size: 28px;
+    margin: 20px 0;
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 2px; /* Jarak antar huruf */
+}
+
+/* Gaya untuk garis pemisah */
+.poem hr {
+    border: none;
+    border-top: 2px dashed #ff69b4; /* Garis dashed dengan warna pink */
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Responsivitas untuk halaman aboutyou.html */
+@media (max-width: 768px) {
+    .poem {
+        padding: 15px;
+    }
+
+    .poem h2 {
+        font-size: 24px;
+    }
+
+    .poem p {
+        font-size: 16px;
+    }
+}
