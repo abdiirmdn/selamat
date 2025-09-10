@@ -124,15 +124,33 @@ h2 {
     color: #9370db;
 }
 
-/* Gaya untuk halaman aboutyou.html */
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang lebih ceria */
+    background: linear-gradient(to bottom, #fff7e6, #ffe4e1); /* Gradien warna lembut */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
 
-/* Gaya untuk header di aboutyou.html */
+/* Gaya untuk header */
 header h1 {
     color: #ff69b4; /* Warna pink cerah */
     font-size: 50px;
     text-align: center;
+    margin: 20px 0;
     text-shadow: 2px 2px #ffa07a; /* Efek bayangan teks */
-    margin-bottom: 20px;
+}
+
+/* Gaya untuk container */
+.container {
+    background-color: #ffffff; /* Warna putih untuk kontras */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 /* Gaya untuk section puisi */
@@ -143,11 +161,23 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
     margin: 20px auto;
     max-width: 700px;
+    position: relative;
+}
+
+/* Tambahkan ikon love di bagian atas section */
+.poem::before {
+    content: ""; /* Ikon love */
+    font-size: 50px;
+    color: #ff69b4;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Gaya untuk teks puisi */
 .poem p {
-    font-size: 18px;
+    font-size: 18px; /* Ukuran font yang konsisten */
     color: #333;
     text-align: center;
     line-height: 1.8;
@@ -177,17 +207,21 @@ header h1 {
     width: 80%;
 }
 
-/* Responsivitas untuk halaman aboutyou.html */
+/* Responsivitas untuk layar kecil */
 @media (max-width: 768px) {
-    .poem {
-        padding: 15px;
+    .container {
+        padding: 20px; /* Tetap gunakan padding yang sama */
     }
 
     .poem h2 {
-        font-size: 24px;
+        font-size: 28px; /* Ukuran font tetap sama */
     }
 
     .poem p {
-        font-size: 16px;
+        font-size: 18px; /* Ukuran font tetap sama */
     }
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Tambahkan fallback font */
 }
