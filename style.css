@@ -126,12 +126,12 @@ h2 {
 
 /* Gaya dasar untuk body */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang lebih ceria */
-    background: linear-gradient(to bottom, #fff7e6, #ffe4e1); /* Gradien warna lembut */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Tambahkan fallback font */
+    background-color: #fff7e6; /* Warna latar belakang lembut */
     color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 /* Gaya untuk header */
